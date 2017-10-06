@@ -69,7 +69,7 @@ http.globalAgent.maxSockets = configuration.maxsockets;
 // request password from pgpass only once at startup, not for each process or even each request
 var connectionDetails =
 {
-	'host' : 'localhost',
+	'host' : configuration.host,
 	'port': configuration.port,
 	'database': configuration.database,
 	'user' : configuration.username,
